@@ -32,6 +32,8 @@ app.use(require("express-session")({
   saveUninitialized: false
 }));
 
+var port = process.env.PORT;
+
 app.use(passport.initialize());
 app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
@@ -49,7 +51,7 @@ app.use(indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
-app.listen(3000,function(){
+app.listen(port||3000,function(){
    console.log("Server has started!!!"); 
 });
 
