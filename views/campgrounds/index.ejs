@@ -7,20 +7,36 @@
 <div class="container">
     <header class="jumbotron">
         <div class="container">
-            <h1>Welcome to YelpCamp!!!!</h1>
-            <p>View our hand-picked campgrounds from all over the world</p>
+            <h1>Training and Placement Cell</h1>
+            <!-- <p>View our hand-picked campgrounds from all over the world</p> -->
+            <br>
+            <br>
+            <p><strong> 75 years of Tradition of excellence in Engineering & Technology
+                Education, Research and Innovations</strong> Delhi Technological University formerly
+                known as Delhi College of Engineering, (initially established with the name – Delhi Polytechnic)
+                came into existence in the year 1941 to cater the needs of Indian industries for trained technical
+                manpower with practical experience and sound theoretical knowledge</p>
             <p>
-                <a class="btn btn-primary btn-large" href="/campgrounds/new">Add a new campground</a>            
+                <a class="btn btn-primary btn-large" href="/campgrounds/new">Click here for Placement Statistics</a>            
             </p>
         </div>
     </header>
-        
-        
+    
+    <br>
+    <br>
+
+    <img src="https://scontent.fdel11-1.fna.fbcdn.net/v/t31.0-8/20507627_1720134718017322_8040121224648331563_o.jpg?_nc_cat=100&_nc_ht=scontent.fdel11-1.fna&oh=06aea253aeca44110a74ffd42c012610&oe=5C9B3672" style="height: 500px; width: 1120px">
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
     <div class="row text-center" style="display:flex; flex-wrap: wrap;">
         <% campgrounds.forEach(function(campground){ %>
             <div class="col-md-6 col-sm-6">
                 <div class="thumbnail">
-                    <img src = "<%= campground.image %>">
+                    <img src = "http://dtu.ac.in/Web/notice/2018/june/file0608.jpg">
                     <div class="caption">
                         <h4><%= campground.name %></h4>
                     </div>

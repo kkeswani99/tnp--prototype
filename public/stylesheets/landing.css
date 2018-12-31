@@ -7,9 +7,9 @@ body {
   text-align: center;
   padding-top: 40vh;
 }
-#landing-header h1 {
-  color: #fff;
-}
+/*#landing-header h1 {
+  color: black;
+}*/
 .slideshow { 
   position: fixed;
   width: 100%;
@@ -36,22 +36,22 @@ body {
   animation: imageAnimation 50s linear infinite; 
 }
 .slideshow li:nth-child(1) { 
-  background-image: url(http://i.imgur.com/K3mPv14.jpg) 
+  background-image: url(https://media.glassdoor.com/l/509269/delhi-technological-university-office.jpg); 
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+  background-image: url(https://s3-ap-south-1.amazonaws.com/cdn.odishatv.in/wp-content/uploads/2017/11/Delhi-Technological-University-750x430.jpg); 
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
-  background-image: url(http://i.imgur.com/emvhOnb.jpg);
+  background-image: url(http://1.bp.blogspot.com/-Uf0_Lk-fa4U/TX50nG68VMI/AAAAAAAAAAQ/6s6dyUbUd94/s1600/197112943_0e46455ff9_b-720081.jpg);
   animation-delay: 20s; 
 }
 .slideshow li:nth-child(4) { 
-  background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
+  background-image: url(http://dtu.ac.in/Web/images/2018/banner02.jpg);
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+  background-image: url(https://qph.fs.quoracdn.net/main-qimg-b9f8f0f0c6159d13185682e0f221e34c.webp);
   animation-delay: 40s; 
 }
 @keyframes imageAnimation { 

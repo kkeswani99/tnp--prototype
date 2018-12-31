@@ -7,19 +7,17 @@ var express 	     = require("express"),
 	  mongoose 	     = require("mongoose"),
     flash          = require("connect-flash"), 
     Campground     = require("./models/campground"),
-    Comment        = require("./models/comment"),
-    User           = require("./models/user"),
-    seedDB         = require("./seeds")
+    User           = require("./models/user")
 
 //Requiring Routes
-var commentRoutes    = require("./routes/comments"),
-    campgroundRoutes = require("./routes/campgrounds"),
+var campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes       = require("./routes/index")
 
 //seedDB(); //seed the databse
 // mongodb://karan:karanyelpcamp30@ds227594.mlab.com:27594/karanyelpcamp
 //mongoose.connect("mongodb://localhost/yelp_camp");
-mongoose.connect("mongodb://karan:karanyelpcamp30@ds227594.mlab.com:27594/karanyelpcamp");
+//mongoose.connect("mongodb://karan:karanyelpcamp30@ds227594.mlab.com:27594/karanyelpcamp");
+mongoose.connect("mongodb://karan123:karan99@ds145484.mlab.com:45484/dtutnpdatabase");
 app.set("view engine","ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -51,7 +49,10 @@ passport.deserializeUser(User.deserializeUser());
 
 app.use(indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
-app.use("/campgrounds/:id/comments", commentRoutes);
+
+app.get('/message', function(req,res) {
+  res.render("campgrounds/message.ejs")
+});
 
 app.listen(port||3000,function(){
    console.log("Server has started!!!"); 
